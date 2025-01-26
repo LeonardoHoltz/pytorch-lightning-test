@@ -1,0 +1,5 @@
+lightning
+torchvision
+munch
+
+pip install -e .

@@ -1,0 +1,25 @@
+# Training Hyperparameters
+learning_rate: 0.001
+
+# Dataset
+data_dir: "dataset/"
+batch_size: 64
+num_workers: 4
+input_size: 784
+num_classes: 10
+
+# Trainer callbacks
+callbacks: &callbacks
+  - type: "RichProgressBar"
+    leave: True
+  - type: "RichModelSummary"
+
+# default Lightning Trainer
+trainer:
+  type: "Trainer" # L.Trainer
+  accelerator: "gpu"
+  devices: [0]
+  min_epochs: 1
+  max_epochs: 3
+  precision: 32
+  callbacks: *callbacks

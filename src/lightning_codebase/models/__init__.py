@@ -1,0 +1,1 @@
+from .mnist_simple_model import *
