@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "lightning-codebase"
+version = "0.1"
+description = "A PyTorch Lightning codebase for fast training setups"
+
+[tool.poetry.dependencies]
+    lightning = "*"
+    torchvision = "*"
+    munch = "*"
+
